@@ -1,0 +1,24 @@
+# 知识库数据（用户本地生成，不上传）
+knowledge_base/vectordb/
+knowledge_base/documents/
+knowledge_base/metadata.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# 测试数据
+test_data/
