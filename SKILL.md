@@ -227,6 +227,16 @@ python3 {SKILL_DIR}/scripts/search_kb.py --query "检索关键词" --top_k 10
 
 如果自检发现问题，**立即修正后再输出最终版本**，并向用户说明修正了什么。
 
+**阶段五：导出 Word 文档**
+
+生成完毕后，将最终 Markdown 文件导出为 Word 格式：
+
+```bash
+python3 {SKILL_DIR}/scripts/export_docx.py /path/to/生成的标书.md
+```
+
+导出的 `.docx` 文件会自动应用标准标书排版（宋体/黑体、A4 页面、蓝色表头表格、正式标题层级）。
+
 ### 迭代修改
 
 用户可能对生成内容提出修改要求：
