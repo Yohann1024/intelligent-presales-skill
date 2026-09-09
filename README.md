@@ -91,6 +91,8 @@ intelligent-presales/
 
 > 📌 扫描件 PDF 和图片格式需要 OCR 支持，后续版本将集成 PaddleOCR。
 
+**招标信息不只在本地文件里。** 网页上的招标公告（常带附件、演示视频）、电话或会议录音，`ingest.py` 吃不到。先用 [cue-omni-reader](https://github.com/sensedeal/cue-skills/tree/main/cue-omni-reader) 收成 Markdown——网页（含页内视频/附件）+ 已授权本地文档/音频/视频，一次可选多个本地文件——再放进同一个入库目录。安装：`npx skills add sensedeal/cue-skills --skill cue-omni-reader`（MIT，可能计费）。
+
 ## 技术栈
 
 | 组件 | 选型 | 说明 |
